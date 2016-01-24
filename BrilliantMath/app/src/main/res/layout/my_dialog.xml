@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorBlue"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HELP"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorOrangeLight"
+        android:textSize="50sp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/border_style"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n You Click To Play Button To Start  Game.\n\n When Play Screen Appears, You Will See One Expresstion.\n\n If 'True' You Tap Button True.\n\n If 'False' You Tap Button False.\n"
+        android:id="@+id/contentView"
+        android:textSize="18sp"
+        android:scrollbars="vertical"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/buttonOK"
+        android:layout_alignStart="@+id/buttonOK"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/buttonOK"
+        android:background="@drawable/border_style"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/buttonOK"
+            android:background="@color/colorOrange"
+            android:layout_alignParentBottom="true" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:textStyle="bold"
+            android:layout_width="153dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="1dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorOrange"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_toRightOf="@+id/buttonOK"
+            android:layout_alignParentBottom="true" />
+    </LinearLayout>
+</LinearLayout>
