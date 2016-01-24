@@ -51,8 +51,8 @@ public class GameScreenActivity extends Activity{
 
             @Override
             public void onFinish() {
-                score = 0;
                 gameOver();
+                score = 0;
             }
         };          // --- Create countdown timer ---
     }
